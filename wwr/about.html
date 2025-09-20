@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us | Rafting Company</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header / Site Navigation -->
+    <header class="site-header">
+        <div class="brand">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="Rafting Co. logo" class="logo" />
+            </a>
+            <p class="sr-only">Rafting Company</p>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a aria-current="page" href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+        <picture>
+            <!-- add responsive sources if you have them -->
+            <img src="images/hero.jpg" alt="Whitewater rafting on a scenic river" class="hero-img" />
+        </picture>
+        <div class="hero-content">
+            <h1 id="hero-title">Rafting Company Title</h1>
+        </div>
+    </section>
+
+    <!-- Intro / About block with image to the right -->
+    <section class="about-intro" aria-labelledby="about-intro-title">
+        <div class="container">
+            <h2 id="about-intro-title" class="sr-only">About Our Company</h2>
+
+            <div class="intro-card">
+                <div class="intro-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae urna nec
+                        augue pulvinar tincidunt. Integer commodo, risus a commodo maximus, metus
+                        sapien feugiat urna, vitae aliquam arcu nibh vitae velit.
+                    </p>
+                    <p>
+                        Nunc posuere, nibh vitae tincidunt pharetra, quam nibh rhoncus arcu, sit amet
+                        varius massa neque non metus. Vivamus a eros non lorem finibus dictum.
+                    </p>
+                </div>
+                <figure class="intro-media">
+                    <img src="images/about-card.jpg" alt="Guests smiling in a raft" />
+                    <figcaption class="sr-only">Guests enjoying a rafting trip</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section class="history" aria-labelledby="history-title">
+        <div class="container">
+            <h2 id="history-title">History</h2>
+            <p>
+                Founded in 1998, our guides have led thousands of safe and unforgettable
+                adventures. Mauris euismod, lorem at tristique bibendum, nisl nunc elementum
+                massa, eget tincidunt turpis nisl ac elit.
+            </p>
+            <p>
+                Sed a laoreet justo. Duis at placerat arcu. Praesent mattis, arcu sit amet
+                fermentum pretium, velit augue pulvinar justo, non consectetur massa tortor eget
+                urna.
+            </p>
+        </div>
+    </section>
+
+    <!-- Adventure Awaits You (callout) -->
+    <section class="adventure-cta" aria-labelledby="adventure-title">
+        <div class="container">
+            <h2 id="adventure-title">Adventure Awaits You</h2>
+            <!-- You can add a button/link here later -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" aria-labelledby="footer-title">
+        <h2 id="footer-title" class="sr-only">Footer</h2>
+        <p class="copyright">
+            &copy; <span id="year">2025</span> Rafting Company. All rights reserved.
+        </p>
+
+        <ul class="social-links" aria-label="Social media">
+            <li><a href="#" aria-label="Facebook">
+                    <img src="images/icon-facebook.svg" alt="" />
+                </a></li>
+            <li><a href="#" aria-label="Twitter/X">
+                    <img src="images/icon-twitter.svg" alt="" />
+                </a></li>
+            <li><a href="#" aria-label="Instagram">
+                    <img src="images/icon-instagram.svg" alt="" />
+                </a></li>
+        </ul>
+    </footer>
+
+    <script>
+        // simple year updater
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
