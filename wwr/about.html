@@ -1,116 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us | Rafting Company</title>
+    <title>About Us • Dry Oar Whitewater Rafting</title>
+    <link rel="preload" as="image" href="images/hero-rafting.jpg">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <!-- Header / Site Navigation -->
+    <!-- Header / Nav -->
     <header class="site-header">
-        <div class="brand">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.svg" alt="Rafting Co. logo" class="logo" />
+        <div class="container header-row">
+            <a class="brand" href="index.html">
+                <img src="images/logo.png" alt="Dry Oar Whitewater Rafting logo" />
+                <span class="sr-only">Dry Oar Whitewater Rafting</span>
             </a>
-            <p class="sr-only">Rafting Company</p>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a class="active" aria-current="page" href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <nav class="primary-nav" aria-label="Primary">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a aria-current="page" href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-title">
-        <picture>
-            <!-- add responsive sources if you have them -->
-            <img src="images/hero.jpg" alt="Whitewater rafting on a scenic river" class="hero-img" />
-        </picture>
-        <div class="hero-content">
-            <h1 id="hero-title">Rafting Company Title</h1>
+    <section class="hero">
+        <img src="images/hero-rafting.jpg" alt="Raft charging through a rapid at sunset" />
+        <div class="hero-overlay">
+            <h1>About Us</h1>
+            <p>Guiding unforgettable river adventures since 2002.</p>
         </div>
     </section>
 
-    <!-- Intro / About block with image to the right -->
-    <section class="about-intro" aria-labelledby="about-intro-title">
-        <div class="container">
-            <h2 id="about-intro-title" class="sr-only">About Our Company</h2>
-
-            <div class="intro-card">
-                <div class="intro-text">
+    <main class="container">
+        <!-- History -->
+        <section class="history">
+            <h2>Our Story</h2>
+            <div class="history-grid">
+                <div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae urna nec
-                        augue pulvinar tincidunt. Integer commodo, risus a commodo maximus, metus
-                        sapien feugiat urna, vitae aliquam arcu nibh vitae velit.
+                        Dry Oar Whitewater Rafting started with three friends, one beat-up van,
+                        and a deep love for wild rivers. From a handful of weekend trips on the
+                        Snake River in 2002 to full seasons across the West today, our mission
+                        has stayed the same: create safe, inclusive, and joy-filled experiences
+                        on world-class whitewater.
                     </p>
                     <p>
-                        Nunc posuere, nibh vitae tincidunt pharetra, quam nibh rhoncus arcu, sit amet
-                        varius massa neque non metus. Vivamus a eros non lorem finibus dictum.
+                        Our guides are Swiftwater Rescue certified and trained in Leave No Trace.
+                        Whether it’s your first splash or your fiftieth, we tailor each trip to
+                        match your comfort level and stoke.
                     </p>
                 </div>
-                <figure class="intro-media">
-                    <img src="images/about-card.jpg" alt="Guests smiling in a raft" />
-                    <figcaption class="sr-only">Guests enjoying a rafting trip</figcaption>
+                <figure class="history-figure">
+                    <img src="images/rafting-team.jpg" alt="Guides steering a raft through churning whitewater">
+                    <figcaption>Our first season on the Snake River, 2002.</figcaption>
                 </figure>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- History -->
-    <section class="history" aria-labelledby="history-title">
-        <div class="container">
-            <h2 id="history-title">History</h2>
-            <p>
-                Founded in 1998, our guides have led thousands of safe and unforgettable
-                adventures. Mauris euismod, lorem at tristique bibendum, nisl nunc elementum
-                massa, eget tincidunt turpis nisl ac elit.
-            </p>
-            <p>
-                Sed a laoreet justo. Duis at placerat arcu. Praesent mattis, arcu sit amet
-                fermentum pretium, velit augue pulvinar justo, non consectetur massa tortor eget
-                urna.
-            </p>
-        </div>
-    </section>
+        <!-- Values -->
+        <section class="values">
+            <h2>What We Value</h2>
+            <ul class="pill-list">
+                <li>Safety first—always</li>
+                <li>Stewardship of wild places</li>
+                <li>Beginner-friendly fun</li>
+                <li>Pro-level thrills</li>
+                <li>Memories that last</li>
+            </ul>
+        </section>
 
-    <!-- Adventure Awaits You (callout) -->
-    <section class="adventure-cta" aria-labelledby="adventure-title">
-        <div class="container">
-            <h2 id="adventure-title">Adventure Awaits You</h2>
-            <!-- You can add a button/link here later -->
-        </div>
-    </section>
+        <!-- Adventure Cards -->
+        <section class="adventures">
+            <h2>Adventure Awaits You!</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <figure>
+                        <img src="images/rafting1.jpg" alt="Raft entering a narrow canyon rapid">
+                        <figcaption>Class IV action</figcaption>
+                    </figure>
+                    <h3>Los Dientes del Diablo</h3>
+                    <p>Sharp drops, tight lines, and non-stop giggles. A favorite for confident first-timers.</p>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="images/rafting2.jpg" alt="Group smiling while paddling a calm stretch">
+                        <figcaption>Scenic float</figcaption>
+                    </figure>
+                    <h3>Big Mallard</h3>
+                    <p>Beginner-friendly with splashy waves and plenty of time to soak in canyon views.</p>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="images/rafting3.jpg" alt="Raft dropping into a wave train">
+                        <figcaption>Wave trains</figcaption>
+                    </figure>
+                    <h3>Half Day Thunder</h3>
+                    <p>Perfect sampler: brisk pace, playful features, and you’re back for lunch.</p>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="images/rafting4.jpg" alt="Camp set up beside a river at dusk">
+                        <figcaption>Riverside camp</figcaption>
+                    </figure>
+                    <h3>Overnighter Escape</h3>
+                    <p>Starry skies, fireside stories, and mellow morning water—magic guaranteed.</p>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="images/rafting5.jpg" alt="Team high-fiving paddles after clearing a rapid">
+                        <figcaption>Teamwork!</figcaption>
+                    </figure>
+                    <h3>Gorge Marathon</h3>
+                    <p>Our all-day epic for paddlers who want every rapid the river can offer.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="site-footer" aria-labelledby="footer-title">
-        <h2 id="footer-title" class="sr-only">Footer</h2>
-        <p class="copyright">
-            &copy; <span id="year">2025</span> Rafting Company. All rights reserved.
-        </p>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>Dry Oar Whitewater Rafting</strong><br>
+                123 River Run Rd, Salmon, ID 83467<br>
+                <a href="tel:+12085551234">(208) 555-1234</a> •
+                <a href="mailto:info@dryoar.example">info@dryoar.example</a>
+            </div>
 
-        <ul class="social-links" aria-label="Social media">
-            <li><a href="#" aria-label="Facebook">
-                    <img src="images/icon-facebook.svg" alt="" />
-                </a></li>
-            <li><a href="#" aria-label="Twitter/X">
-                    <img src="images/icon-twitter.svg" alt="" />
-                </a></li>
-            <li><a href="#" aria-label="Instagram">
-                    <img src="images/icon-instagram.svg" alt="" />
-                </a></li>
-        </ul>
+            <div class="social">
+                <a aria-label="Facebook" href="https://facebook.com" target="_blank" rel="noopener">
+                    <img src="images/icon-facebook.png" alt="" />
+                </a>
+                <a aria-label="Instagram" href="https://instagram.com" target="_blank" rel="noopener">
+                    <img src="images/icon-instagram.png" alt="" />
+                </a>
+                <a aria-label="LinkedIn" href="https://linkedin.com" target="_blank" rel="noopener">
+                    <img src="images/icon-linkedin.png" alt="" />
+                </a>
+            </div>
+        </div>
+        <p class="legal">&copy; <span id="year"></span> Dry Oar. All rights reserved.</p>
     </footer>
 
     <script>
-        // simple year updater
+        // Small enhancement: current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
