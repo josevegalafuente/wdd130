@@ -12,7 +12,6 @@
 img { display: block; max-width: 100%; height: auto; }
 
 body {
-  font-family: var(--body-font);
   background: var(--light-color);
   color: var(--dark-color);
   line-height: 1.6;
@@ -98,3 +97,6 @@ footer {
   height: 28px;
   display: block;
 }
+
+.socialmedia a{ text-decoration: none; }
+.socialmedia img{ width: 28px; height: 28px; display: block; }
