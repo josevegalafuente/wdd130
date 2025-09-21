@@ -1,10 +1,7 @@
 :root {
-  --light-color: #EAEFFE;   /* fondo claro */
-  --main-color:  #9787F3;   /* morado */
-  --dark-color:  #2D274B;   /* oscuro */
-
-  --heading-font: "Times New Roman", Georgia, serif;
-  --body-font: Arial, Helvetica, sans-serif;
+  --light-color: #EAEFFE;  
+  --main-color:  #9787F3; 
+  --dark-color:  #2D274B; 
 }
 
 * {
